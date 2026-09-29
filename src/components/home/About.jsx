@@ -8,12 +8,12 @@ const team = [
   },
   {
     name: "Mohammmed Tauquir",
-    role: "Managing Director",
+    role: "Director",
     img: "https://res.cloudinary.com/dcx2gs6mm/image/upload/v1790676101/Mohd_Tauquir_oiflua.png",
   },
   {
     name: "Mohd Zaid",
-    role: "Director",
+    role: "Associate Director",
     img: "https://res.cloudinary.com/dcx2gs6mm/image/upload/v1790676104/Zaid_Bhai_tu9hju.jpg",
   },
 ];
