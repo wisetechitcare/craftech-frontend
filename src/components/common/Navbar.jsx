@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
+import React, { useEffect, useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -9,18 +9,18 @@ const Navbar = () => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 70);
     };
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   const navLinks = [
-    { title: 'Home', href: '#hero' },
-    { title: 'About', href: '#about' },
-    { title: 'Services', href: '#services' },
-    { title: 'Portfolio', href: '#portfolio' },
-    { title: 'Videos', href: '#videos' },
-    { title: 'Why Us', href: '#why' },
-    { title: 'Contact', href: '#contact' },
+    { title: "Home", href: "#hero" },
+    { title: "About", href: "#about" },
+    { title: "Services", href: "#services" },
+    { title: "Portfolio", href: "#portfolio" },
+    { title: "Videos", href: "#videos" },
+    { title: "Why Us", href: "#why" },
+    { title: "Contact", href: "#contact" },
   ];
 
   const menuVariants = {
@@ -31,8 +31,8 @@ const Navbar = () => {
         stiffness: 400,
         damping: 40,
         staggerChildren: 0.05,
-        staggerDirection: -1
-      }
+        staggerDirection: -1,
+      },
     },
     open: {
       x: 0,
@@ -41,14 +41,14 @@ const Navbar = () => {
         stiffness: 400,
         damping: 40,
         staggerChildren: 0.1,
-        delayChildren: 0.2
-      }
-    }
+        delayChildren: 0.2,
+      },
+    },
   };
 
   const linkVariants = {
     closed: { x: 50, opacity: 0 },
-    open: { x: 0, opacity: 1 }
+    open: { x: 0, opacity: 1 },
   };
 
   return (
@@ -56,16 +56,16 @@ const Navbar = () => {
       <header
         className={`fixed top-0 left-0 right-0 h-[80px] lg:h-[100px] z-[5000] transition-all duration-500 ${
           isScrolled
-            ? 'bg-white/80 backdrop-blur-xl border-b border-gray-100'
-            : 'bg-transparent'
+            ? "bg-white/80 backdrop-blur-xl border-b border-gray-100"
+            : "bg-transparent"
         }`}
       >
         <div className="container mx-auto px-6 lg:px-12 h-full flex items-center justify-between">
           <a href="#hero" className="relative z-[5001]">
             <img
-              src="https://res.cloudinary.com/dcx2gs6mm/image/upload/v1775115100/logo2_ecym5g.png"
+              src="https://res.cloudinary.com/dcx2gs6mm/image/upload/v1790235620/craftech/branding/wshft0z2prpfam2m9acu.png"
               alt="Craftech Logo"
-              className={`w-[180px] lg:w-[240px] transition-all duration-500 ${!isScrolled && !isMobileMenuOpen ? 'brightness-0 invert' : ''}`}
+              className={`w-[180px] lg:w-[240px] transition-all duration-500 ${!isScrolled && !isMobileMenuOpen}`}
             />
           </a>
 
@@ -76,7 +76,7 @@ const Navbar = () => {
                 key={link.title}
                 href={link.href}
                 className={`text-[0.75rem] font-bold uppercase tracking-[3px] py-2 relative group transition-colors duration-300 ${
-                  isScrolled ? 'text-blue' : 'text-white/80 hover:text-white'
+                  isScrolled ? "text-blue" : "text-white/80 hover:text-white"
                 }`}
               >
                 {link.title}
@@ -89,9 +89,9 @@ const Navbar = () => {
             <a
               href="#contact"
               className={`px-8 py-4 rounded-xl text-[0.7rem] font-black uppercase tracking-[3px] transition-all duration-500 ${
-                isScrolled 
-                ? 'bg-blue text-white shadow-xl hover:shadow-blue/20 hover:-translate-y-1' 
-                : 'bg-white text-blue hover:bg-accent hover:text-white'
+                isScrolled
+                  ? "bg-blue text-white shadow-xl hover:shadow-blue/20 hover:-translate-y-1"
+                  : "bg-white text-blue hover:bg-accent hover:text-white"
               }`}
             >
               Get Technical Quote
@@ -103,8 +103,12 @@ const Navbar = () => {
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
             className="xl:hidden relative z-[5001] w-12 h-12 flex flex-col items-center justify-center gap-2 group"
           >
-            <span className={`w-8 h-[2px] transition-all duration-500 ${isScrolled || isMobileMenuOpen ? 'bg-blue' : 'bg-white'} ${isMobileMenuOpen ? 'rotate-45 translate-y-[5px]' : ''}`} />
-            <span className={`w-8 h-[2px] transition-all duration-500 ${isScrolled || isMobileMenuOpen ? 'bg-blue' : 'bg-white'} ${isMobileMenuOpen ? '-rotate-45 -translate-y-[5px]' : ''}`} />
+            <span
+              className={`w-8 h-[2px] transition-all duration-500 ${isScrolled || isMobileMenuOpen ? "bg-blue" : "bg-white"} ${isMobileMenuOpen ? "rotate-45 translate-y-[5px]" : ""}`}
+            />
+            <span
+              className={`w-8 h-[2px] transition-all duration-500 ${isScrolled || isMobileMenuOpen ? "bg-blue" : "bg-white"} ${isMobileMenuOpen ? "-rotate-45 -translate-y-[5px]" : ""}`}
+            />
           </button>
         </div>
       </header>
@@ -142,13 +146,23 @@ const Navbar = () => {
               </div>
 
               <div className="mt-20 pt-10 border-t border-gray-100 overflow-hidden">
-                <motion.div variants={linkVariants} className="flex flex-col gap-6">
+                <motion.div
+                  variants={linkVariants}
+                  className="flex flex-col gap-6"
+                >
                   <div className="flex flex-col">
-                    <span className="text-[0.6rem] font-black text-mid uppercase tracking-[4px] mb-2">Direct Contact</span>
-                    <a href="tel:+919324877493" className="text-xl font-black text-blue">+91 93248 77493</a>
+                    <span className="text-[0.6rem] font-black text-mid uppercase tracking-[4px] mb-2">
+                      Direct Contact
+                    </span>
+                    <a
+                      href="tel:+919324877493"
+                      className="text-xl font-black text-blue"
+                    >
+                      +91 93248 77493
+                    </a>
                   </div>
-                  <a 
-                    href="#contact" 
+                  <a
+                    href="#contact"
                     onClick={() => setIsMobileMenuOpen(false)}
                     className="w-full py-6 bg-blue text-white rounded-3xl text-center font-black uppercase tracking-[3px] text-sm"
                   >
