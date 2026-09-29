@@ -33,7 +33,7 @@ const Footer = () => {
             </p>
             <div className="flex gap-4">
               {[
-                { icon: "fa-linkedin-in", link: "#" },
+                // { icon: "fa-linkedin-in", link: "#" },
                 {
                   icon: "fa-instagram",
                   link: "https://www.instagram.com/craftech_engg/",

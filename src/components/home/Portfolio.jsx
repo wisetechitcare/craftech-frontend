@@ -11,7 +11,8 @@ const projects = [
     year: "2023",
     location: "Mumbai, MH",
     thumbnail:
-      "https://res.cloudinary.com/dcx2gs6mm/image/upload/v1775114621/39_vjll9h.jpg",
+      // "https://res.cloudinary.com/dcx2gs6mm/image/upload/v1775114627/30_dgbpex.jpg",
+      "https://res.cloudinary.com/dcx2gs6mm/image/upload/v1775114627/30_dgbpex.jpg",
     images: [
       "https://res.cloudinary.com/dcx2gs6mm/image/upload/v1775114653/5_x1eeoa.jpg",
       "https://res.cloudinary.com/dcx2gs6mm/image/upload/v1775114651/10_vglwnb.jpg",
@@ -28,7 +29,8 @@ const projects = [
     year: "2024",
     location: "Juhu, Mumbai",
     thumbnail:
-      "https://res.cloudinary.com/dcx2gs6mm/image/upload/v1775114377/39_s4jqut.jpg",
+      // "https://res.cloudinary.com/dcx2gs6mm/image/upload/v1775114377/39_s4jqut.jpg",
+      "https://res.cloudinary.com/dcx2gs6mm/image/upload/v1775114369/1_xpbzw3.jpg",
     images: [
       "https://res.cloudinary.com/dcx2gs6mm/image/upload/v1775114653/5_x1eeoa.jpg",
       "https://res.cloudinary.com/dcx2gs6mm/image/upload/v1775114631/42_inv6rf.jpg",
@@ -44,7 +46,8 @@ const projects = [
     year: "2023",
     location: "Andheri, Mumbai",
     thumbnail:
-      "https://res.cloudinary.com/dcx2gs6mm/image/upload/v1775114625/25_mtkmve.jpg",
+      // "https://res.cloudinary.com/dcx2gs6mm/image/upload/v1775114625/25_mtkmve.jpg",
+      "https://res.cloudinary.com/dcx2gs6mm/image/upload/v1790676869/7th_Floor_-_Open_Area_5_zn5bi3.jpg",
     images: [
       "https://res.cloudinary.com/dcx2gs6mm/image/upload/v1775114625/25_mtkmve.jpg",
       "https://res.cloudinary.com/dcx2gs6mm/image/upload/v1775114624/22_grmb1j.jpg",

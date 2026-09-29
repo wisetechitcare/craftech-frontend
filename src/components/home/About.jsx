@@ -4,22 +4,22 @@ const team = [
   {
     name: "Mohd Mobeen",
     role: "Director",
-    img: "https://res.cloudinary.com/dcx2gs6mm/image/upload/v1775114377/39_s4jqut.jpg",
+    img: "https://res.cloudinary.com/dcx2gs6mm/image/upload/v1790676102/Mohd_Mobeen_omxepf.jpg",
   },
   {
-    name: "Mohd Tauquir",
+    name: "Mohammmed Tauquir",
     role: "Managing Director",
-    img: "https://res.cloudinary.com/dcx2gs6mm/image/upload/v1775114387/19_ibvdfz.jpg",
+    img: "https://res.cloudinary.com/dcx2gs6mm/image/upload/v1790676101/Mohd_Tauquir_oiflua.png",
   },
   {
     name: "Mohd Zaid",
-    role: "Associate Director",
-    img: "https://res.cloudinary.com/dcx2gs6mm/image/upload/v1775114377/39_s4jqut.jpg",
+    role: "Director",
+    img: "https://res.cloudinary.com/dcx2gs6mm/image/upload/v1790676104/Zaid_Bhai_tu9hju.jpg",
   },
 ];
 
 const stats = [
-  { value: "12+", label: "Successful projects" },
+  { value: "30+", label: "Successful projects" },
   { value: "12+ Years", label: "Of industry leadership" },
   { value: "2012", label: "Crafting excellence since" },
 ];
