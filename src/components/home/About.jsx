@@ -1,96 +1,148 @@
-import React from 'react';
-import { motion } from 'framer-motion';
+import React from "react";
+
+const team = [
+  {
+    name: "Mohd Mobeen",
+    role: "Director",
+    img: "https://res.cloudinary.com/dcx2gs6mm/image/upload/v1775114377/39_s4jqut.jpg",
+  },
+  {
+    name: "Mohd Tauquir",
+    role: "Managing Director",
+    img: "https://res.cloudinary.com/dcx2gs6mm/image/upload/v1775114387/19_ibvdfz.jpg",
+  },
+  {
+    name: "Mohd Zaid",
+    role: "Associate Director",
+    img: "https://res.cloudinary.com/dcx2gs6mm/image/upload/v1775114377/39_s4jqut.jpg",
+  },
+];
+
+const stats = [
+  { value: "12+", label: "Successful projects" },
+  { value: "12+ Years", label: "Of industry leadership" },
+  { value: "2012", label: "Crafting excellence since" },
+];
 
 const About = () => {
   return (
-    <section id="about" className="py-32 bg-white relative overflow-hidden">
-      <div className="container mx-auto px-8">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 items-start">
-          
-          {/* Text Content */}
-          <div className="lg:col-span-7" data-aos="fade-right">
-            <div className="flex items-center gap-4 mb-8">
+    <section
+      id="about"
+      className="py-24 md:py-40 bg-light relative overflow-hidden"
+    >
+      <div
+        className="absolute -left-32 top-1/4 w-[420px] h-[420px] rounded-full bg-accent/5 blur-[90px] pointer-events-none"
+        aria-hidden
+      />
+
+      <div className="container mx-auto px-8 relative z-10">
+        {/* Section header + intro — matches Portfolio / Process */}
+        <div
+          className="flex flex-col lg:flex-row items-start justify-between gap-10 lg:gap-12 mb-12 md:mb-16"
+          data-aos="fade-up"
+        >
+          <div className="max-w-2xl">
+            <div className="flex items-center gap-4 mb-6">
               <span className="w-12 h-[2px] bg-accent" />
-              <span className="text-[0.75rem] font-black uppercase tracking-[5px] text-blue/40">
-                Crafting Excellence since 2012
+              <span className="text-[0.7rem] font-black uppercase tracking-[5px] text-blue/40">
+                Crafting Excellence since 2012{" "}
               </span>
             </div>
-            
-            <h2 className="text-[clamp(2.5rem,5vw,4.5rem)] font-extrabold text-blue leading-[1.05] tracking-tighter mb-10">
-              The Art of <span className="text-accent underline decoration-4 underline-offset-8">Precision</span> <br /> 
+            <h2 className="text-[clamp(2.5rem,5vw,4.5rem)] font-black text-blue leading-[1.1] tracking-tighter">
+              The Art of{" "}
+              <span className="text-accent italic font-black underline">
+                Precision{" "}
+              </span>{" "}
               Engineering.
             </h2>
-            
-            <div className="max-w-[650px] space-y-8">
-              <p className="text-[1.15rem] font-medium text-dark leading-relaxed">
-                <span className="text-blue font-bold">Craftech Engineers Pvt. Ltd.</span> is more than a construction firm. 
-                We are a single-point hub for visionaries seeking absolute precision in MEP execution, 
-                specialized EPC contracting, and custom interior fit-out solutions.
-              </p>
-              
-              <p className="text-[1rem] text-mid leading-loose">
-                With a decade-long track record across Mumbai's elite residential and commercial sectors, 
-                we implement <strong>Lean Construction</strong> workflows — a strict discipline that 
-                eliminates wastage and maximizes value at every phase of the project lifecycle.
-              </p>
-              
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-10 pt-10">
-                <div className="flex flex-col gap-3">
-                  <div className="text-3xl font-black text-blue">120+</div>
-                  <div className="h-[2px] w-12 bg-accent/20" />
-                  <div className="text-[0.8rem] font-bold uppercase tracking-widest text-mid">Successful projects</div>
-                </div>
-                <div className="flex flex-col gap-3">
-                  <div className="text-3xl font-black text-blue">12Y</div>
-                  <div className="h-[2px] w-12 bg-accent/20" />
-                  <div className="text-[0.8rem] font-bold uppercase tracking-widest text-mid">Of Industry leadership</div>
-                </div>
-              </div>
-            </div>
           </div>
 
-          {/* Visual Content - Overlapping Images */}
-          <div className="lg:col-span-5 relative" data-aos="fade-left">
-            <div className="relative aspect-[4/5] rounded-[40px] overflow-hidden shadow-2xl group">
-              <img
-                src="https://res.cloudinary.com/dcx2gs6mm/image/upload/v1775114377/39_s4jqut.jpg"
-                alt="Construction"
-                className="w-full h-full object-cover transition-transform duration-[2000ms] group-hover:scale-110"
-              />
-              {/* Glass Info Card Over Image */}
-              <div className="absolute bottom-10 left-10 right-10 bg-white/10 backdrop-blur-3xl border border-white/20 p-8 rounded-[32px] transform translate-y-4 group-hover:translate-y-0 transition-all duration-500 shadow-2xl">
-                <p className="text-white text-sm font-medium italic opacity-90 mb-4">
-                  "Complexity is our canvas. Engineering is our medium."
-                </p>
-                <div className="flex items-center gap-3">
-                  <div className="w-10 h-10 rounded-full bg-accent flex items-center justify-center text-white">
-                    <i className="fa-solid fa-hard-hat" />
+          <div className="max-w-[480px] space-y-5">
+            <p className="text-[1.05rem] font-medium text-dark/90 leading-relaxed">
+              <span className="font-bold text-blue">
+                Craftech Engineers Pvt. Ltd.
+              </span>{" "}
+              is more than a construction firm. We are a single-point hub for
+              visionaries seeking absolute precision in MEP execution,
+              specialized EPC contracting, and custom interior fit-out
+              solutions.
+            </p>
+            <p className="text-[0.95rem] text-mid leading-relaxed opacity-80">
+              With a decade-long track record across Mumbai's elite residential
+              and commercial sectors, we implement Lean Construction workflows —
+              a strict discipline that eliminates wastage and maximizes value at
+              every phase of the project lifecycle.
+            </p>
+          </div>
+        </div>
+
+        {/* Stats */}
+        <div
+          className="grid grid-cols-1 sm:grid-cols-3 gap-6 md:gap-0 md:divide-x md:divide-blue/10 rounded-[28px] bg-blue/[0.04] border border-blue/[0.08] px-6 py-8 md:px-10 md:py-10 mb-16 md:mb-20"
+          data-aos="fade-up"
+          data-aos-delay="80"
+        >
+          {stats.map((item) => (
+            <div
+              key={item.label}
+              className="flex flex-col items-center md:items-start text-center md:text-left md:px-6 first:md:pl-0 last:md:pr-0"
+            >
+              <span className="text-[clamp(2.25rem,4vw,3rem)] font-black text-blue leading-none tracking-tight">
+                {item.value}
+              </span>
+              <span className="mt-2 text-[0.72rem] font-bold uppercase tracking-[0.2em] text-mid max-w-[14rem]">
+                {item.label}
+              </span>
+            </div>
+          ))}
+        </div>
+
+        {/* Team */}
+        <div>
+          <div className="max-w-[800px] mb-12 md:mb-16" data-aos="fade-up">
+            <div className="flex items-center gap-4 mb-6">
+              <span className="w-12 h-[2px] bg-accent" />
+              <span className="text-[0.7rem] font-black uppercase tracking-[5px] text-blue/40">
+                Meet the core team
+              </span>
+            </div>
+            <h2 className="text-[clamp(2.5rem,5vw,4rem)] font-black text-blue leading-[1.1] tracking-tighter">
+              Our {""}
+              <span className="text-accent italic font-black underline decoration-4 underline-offset-[10px] decoration-accent">
+                Leaders.
+              </span>
+            </h2>
+          </div>
+
+          <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-12 lg:gap-x-10 list-none p-0 m-0">
+            {team.map((person, i) => (
+              <li
+                key={person.name + i}
+                data-aos="fade-up"
+                data-aos-delay={i * 100}
+              >
+                <article className="group">
+                  <div className="relative aspect-square w-full overflow-hidden rounded-[28px] bg-blue/5 shadow-[0_12px_40px_rgba(10,38,71,0.08)]">
+                    <img
+                      src={person.img}
+                      alt={person.name}
+                      loading="lazy"
+                      className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-[1.03]"
+                    />
                   </div>
-                  <span className="text-white font-bold text-xs uppercase tracking-widest">Waqar Ansari Project</span>
-                </div>
-              </div>
-            </div>
-            
-            {/* Tertiary Image */}
-            <div className="absolute -bottom-16 -left-20 w-64 aspect-[1/1] rounded-[32px] overflow-hidden border-[12px] border-white shadow-2xl hidden xl:block">
-              <img
-                 src="https://res.cloudinary.com/dcx2gs6mm/image/upload/v1775114387/19_ibvdfz.jpg"
-                 alt="Detail"
-                 className="w-full h-full object-cover"
-              />
-            </div>
-            
-            {/* Experience Tag with rotation */}
-            <div className="absolute top-20 -right-12 w-40 h-40 bg-white shadow-2xl rounded-full flex flex-col items-center justify-center border border-gray-50 z-20 hover:scale-110 transition-transform cursor-none">
-               <div className="text-4xl font-black text-blue">12+</div>
-               <div className="text-[0.6rem] font-bold text-mid uppercase tracking-widest text-center mt-1">Years of<br />Excellence</div>
-               {/* Slow rotation text */}
-               <div className="absolute inset-2 animate-[spin_10s_linear_infinite]">
-                 {/* This could be a circular text path if needed */}
-               </div>
-            </div>
-          </div>
 
+                  <div className="pt-5 text-center">
+                    <h3 className="text-xl md:text-2xl font-extrabold text-blue tracking-tight ">
+                      {person.name}
+                    </h3>
+                    <p className="mt-1.5 text-sm md:text-base font-semibold uppercase tracking-wider text-accent">
+                      {person.role}
+                    </p>
+                  </div>
+                </article>
+              </li>
+            ))}
+          </ul>
         </div>
       </div>
     </section>
