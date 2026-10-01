@@ -138,7 +138,7 @@ const Navbar = () => {
                     variants={linkVariants}
                     href={link.href}
                     onClick={() => setIsMobileMenuOpen(false)}
-                    className="text-4xl lg:text-5xl font-black text-blue hover:text-accent transition-colors duration-300 tracking-tighter"
+                    className="text-2xl text-center lg:text-5xl font-black text-blue hover:text-accent transition-colors duration-300 tracking-tighter"
                   >
                     {link.title}
                   </motion.a>
@@ -164,7 +164,7 @@ const Navbar = () => {
                   <a
                     href="#contact"
                     onClick={() => setIsMobileMenuOpen(false)}
-                    className="w-full py-6 bg-blue text-white rounded-3xl text-center font-black uppercase tracking-[3px] text-sm"
+                    className="w-full py-5 bg-blue text-white rounded-3xl text-center font-black uppercase tracking-[3px] text-xl"
                   >
                     Start a Project
                   </a>
