@@ -145,12 +145,12 @@ const Navbar = () => {
                 ))}
               </div>
 
-              <div className="mt-20 pt-10 border-t border-gray-100 overflow-hidden">
+              <div className="mt-10 pt-6 border-t border-gray-300 overflow-hidden">
                 <motion.div
                   variants={linkVariants}
                   className="flex flex-col gap-6"
                 >
-                  <div className="flex flex-col">
+                  {/* <div className="flex flex-col">
                     <span className="text-[0.6rem] font-black text-mid uppercase tracking-[4px] mb-2">
                       Direct Contact
                     </span>
@@ -160,7 +160,7 @@ const Navbar = () => {
                     >
                       +91 93248 77493
                     </a>
-                  </div>
+                  </div> */}
                   <a
                     href="#contact"
                     onClick={() => setIsMobileMenuOpen(false)}
